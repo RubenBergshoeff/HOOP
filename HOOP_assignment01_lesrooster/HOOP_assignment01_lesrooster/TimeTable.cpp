@@ -8,7 +8,11 @@
 
 #include "TimeTable.hpp"
 
-
+/*
+    TimeTable::viewTimeTable
+    should display the timetable, based on date order
+    will be called by the UserInterface class
+*/
 void TimeTable::viewTimeTable(){
     
 }

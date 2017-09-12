@@ -8,10 +8,18 @@
 
 #include "Users.hpp"
 
+/*
+    Student::loadTimeTable
+    needs to load AgendaItems from DataBase based on the class the student has been assigned
+*/
 void Student::loadTimeTable(){
     
 }
 
+/*
+    Teacher::loadTimeTable
+    needs to load AgendaItems from DataBase based on the teachers name
+*/
 void Teacher::loadTimeTable(){
     
 }

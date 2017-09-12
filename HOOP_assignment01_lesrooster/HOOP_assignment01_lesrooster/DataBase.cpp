@@ -8,7 +8,10 @@
 
 #include "DataBase.hpp"
 
-
+/*
+    Database::loadUser
+    should return a user from the database using the name as reference
+*/
 User * DataBase::loadUser(std::string name){
     return new User;
 }
