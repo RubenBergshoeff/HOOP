@@ -10,7 +10,6 @@
 #define Cell_hpp
 
 #include <stdio.h>
-#include "Vector2.hpp"
 #include "CellBehaviour.hpp"
 
 class Cell {
