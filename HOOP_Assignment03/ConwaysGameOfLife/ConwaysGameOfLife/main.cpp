@@ -16,9 +16,9 @@ int main(int argc, const char * argv[]) {
     float deltaTime = 0;
     float timePassed = 0;
     t = clock();
-    double framerate = 0.0166667; // fixed 60fps
+    double framerate = 0.1; // fixed 60fps = 0.0166667
     
-    Grid grid = Grid(15);
+    Grid grid = Grid(12);
     
     // insert code here...
     while (true){

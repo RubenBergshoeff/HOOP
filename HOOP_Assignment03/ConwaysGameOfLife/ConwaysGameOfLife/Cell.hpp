@@ -17,6 +17,7 @@ class Cell {
 public:
     Cell(bool state, CellBehaviour * behaviour);
     bool alive;
+    bool nextState;
     CellBehaviour * behaviour;
 };
 

@@ -87,8 +87,17 @@ void Grid::updateState(){
         while (itCells != itRows->end()){
             int livingNeighbours = getLivingNeighbours((int)(itRows - cells.begin()), (int) (itCells  - itRows->begin()));
             
-            itCells->alive = itCells->behaviour->newState(livingNeighbours, itCells->alive);
+            itCells->nextState = itCells->behaviour->newState(livingNeighbours, itCells->alive);
             
+            itCells++;
+        }
+        itRows++;
+    }
+    itRows = cells.begin();
+    while (itRows != cells.end()){
+        vector<Cell>::iterator itCells = itRows->begin();
+        while (itCells != itRows->end()){
+            itCells->alive = itCells->nextState;
             itCells++;
         }
         itRows++;
