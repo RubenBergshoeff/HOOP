@@ -9,6 +9,9 @@
 #include <iostream>
 #include <time.h>       /* clock_t, clock, CLOCKS_PER_SEC */
 #include "Grid.hpp"
+#include "CBStandard.hpp"
+#include "CBHerdMentality.hpp"
+#include "CBLoners.hpp"
 
 int main(int argc, const char * argv[]) {
     // timer for controlled framerate
@@ -20,7 +23,13 @@ int main(int argc, const char * argv[]) {
     // duration of frame in seconds
     double framerate = 0.1; // fixed 60fps = 0.0166667
     
-    Grid grid = Grid(12);
+    // references to the defined behaviours
+    CBStandard * standardBehaviour = new CBStandard();
+    CBHerdMentality * herdBehaviour = new CBHerdMentality();
+    CBLoners * lonerBehaviour = new CBLoners();
+    
+    // create grid, input preferred behaviour
+    Grid grid = Grid(30, standardBehaviour);
     
     // insert code here...
     while (true){
@@ -35,6 +44,7 @@ int main(int argc, const char * argv[]) {
             grid.draw();
             std::cout << "\n\n ----- \n\n";
             timePassed -= (framerate);
+            cout << endl;
         }
     }
     

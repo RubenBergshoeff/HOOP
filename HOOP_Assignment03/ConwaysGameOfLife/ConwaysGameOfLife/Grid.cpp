@@ -26,6 +26,18 @@ Grid::Grid(int size){
     }
 }
 
+Grid::Grid(int size, CellBehaviour * behaviour){
+    // create multidimensional vector with given size and apply provided behaviour
+    for (int i = 0; i < size ; i++){
+        vector<Cell> row;
+        for (int j = 0; j < size ; j++){
+            bool state = (rand() % 2) == 0 ? true : false;
+            row.push_back(Cell(state, behaviour));
+        }
+        this->cells.push_back(row);
+    }
+}
+
 int Grid::getLivingNeighbours(int x, int y){
     int livingNeighbours = 0;
     int gridSize = (int)(cells.size() - 1);

@@ -13,12 +13,14 @@
 #include <vector>
 #include <string>
 #include "Cell.hpp"
+#include "CellBehaviour.hpp"
 
 using namespace std;
 
 class Grid {
 public:
     Grid (int size);
+    Grid (int size, CellBehaviour * behaviour);
     int getLivingNeighbours (int x, int y);
     void updateState ();
     void draw ();
