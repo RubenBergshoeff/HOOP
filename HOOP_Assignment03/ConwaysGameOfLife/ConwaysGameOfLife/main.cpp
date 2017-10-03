@@ -11,21 +11,25 @@
 #include "Grid.hpp"
 
 int main(int argc, const char * argv[]) {
-    // controlled framerate
+    // timer for controlled framerate
     clock_t t;
     float deltaTime = 0;
     float timePassed = 0;
     t = clock();
+    
+    // duration of frame in seconds
     double framerate = 0.1; // fixed 60fps = 0.0166667
     
     Grid grid = Grid(12);
     
     // insert code here...
     while (true){
+        // process time passed
         deltaTime = ((float)(clock() - t)) / CLOCKS_PER_SEC;
         t = clock();
         timePassed += deltaTime;
         
+        // if the time passed is equal to the duration of a frame, run code
         if (timePassed > (framerate)){
             grid.updateState();
             grid.draw();

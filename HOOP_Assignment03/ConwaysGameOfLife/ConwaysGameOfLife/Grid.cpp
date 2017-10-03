@@ -12,8 +12,10 @@
 #include "CBStandard.hpp"
 
 Grid::Grid(int size){
+    // for now give all cells a reference to the defined standard behaviour
     CBStandard * standardBehaviour = new CBStandard();
     
+    // create multidimensional vector with given size
     for (int i = 0; i < size ; i++){
         vector<Cell> row;
         for (int j = 0; j < size ; j++){
@@ -81,18 +83,19 @@ int Grid::getLivingNeighbours(int x, int y){
 }
 
 void Grid::updateState(){
+    // define next state for each cell
     vector<vector<Cell>>::iterator itRows = cells.begin();
     while (itRows != cells.end()){
         vector<Cell>::iterator itCells = itRows->begin();
         while (itCells != itRows->end()){
+            // get iteration index by subtracting the vector.begin() from the iterator
             int livingNeighbours = getLivingNeighbours((int)(itRows - cells.begin()), (int) (itCells  - itRows->begin()));
-            
             itCells->nextState = itCells->behaviour->newState(livingNeighbours, itCells->alive);
-            
             itCells++;
         }
         itRows++;
     }
+    // apply next state to each cell
     itRows = cells.begin();
     while (itRows != cells.end()){
         vector<Cell>::iterator itCells = itRows->begin();
