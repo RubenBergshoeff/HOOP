@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9A6E0C821F8147F700EE08E8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C811F8147F700EE08E8 /* main.cpp */; };
-		9A6E0C8A1F814BDE00EE08E8 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C881F814BDE00EE08E8 /* Vector2.cpp */; };
 		9A6E0C8D1F814C2100EE08E8 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C8B1F814C2100EE08E8 /* Cell.cpp */; };
 		9A6E0C901F814CE600EE08E8 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C8E1F814CE600EE08E8 /* Grid.cpp */; };
 		9A6E0C931F817A3B00EE08E8 /* CellBehaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E0C911F817A3B00EE08E8 /* CellBehaviour.cpp */; };
@@ -30,8 +29,6 @@
 /* Begin PBXFileReference section */
 		9A6E0C7E1F8147F700EE08E8 /* ConwaysGameOfLife */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConwaysGameOfLife; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6E0C811F8147F700EE08E8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		9A6E0C881F814BDE00EE08E8 /* Vector2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
-		9A6E0C891F814BDE00EE08E8 /* Vector2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector2.hpp; sourceTree = "<group>"; };
 		9A6E0C8B1F814C2100EE08E8 /* Cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
 		9A6E0C8C1F814C2100EE08E8 /* Cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cell.hpp; sourceTree = "<group>"; };
 		9A6E0C8E1F814CE600EE08E8 /* Grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
@@ -73,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				9A6E0C811F8147F700EE08E8 /* main.cpp */,
-				9A6E0C881F814BDE00EE08E8 /* Vector2.cpp */,
-				9A6E0C891F814BDE00EE08E8 /* Vector2.hpp */,
 				9A6E0C8B1F814C2100EE08E8 /* Cell.cpp */,
 				9A6E0C8C1F814C2100EE08E8 /* Cell.hpp */,
 				9A6E0C8E1F814CE600EE08E8 /* Grid.cpp */,
@@ -146,7 +141,6 @@
 			files = (
 				9A6E0C8D1F814C2100EE08E8 /* Cell.cpp in Sources */,
 				9A6E0C821F8147F700EE08E8 /* main.cpp in Sources */,
-				9A6E0C8A1F814BDE00EE08E8 /* Vector2.cpp in Sources */,
 				9A6E0C901F814CE600EE08E8 /* Grid.cpp in Sources */,
 				9A6E0C931F817A3B00EE08E8 /* CellBehaviour.cpp in Sources */,
 				9A6E0C961F817C3A00EE08E8 /* CBStandard.cpp in Sources */,
