@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A275BB21F8CA9170096D91A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A275BB11F8CA9170096D91A /* main.cpp */; };
+		9AA5DA7A1F8D100E0014B271 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA781F8D100E0014B271 /* Queue.cpp */; };
+		9AA5DA7D1F8D2F400014B271 /* NPCBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA7B1F8D2F400014B271 /* NPCBase.cpp */; };
+		9AA5DA801F8D31620014B271 /* ElfNPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA7E1F8D31620014B271 /* ElfNPC.cpp */; };
+		9AA5DA831F8D321C0014B271 /* OrkNPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA811F8D321C0014B271 /* OrkNPC.cpp */; };
+		9AA5DA861F8D32920014B271 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA841F8D32920014B271 /* Decorator.cpp */; };
+		9AA5DA891F8D332C0014B271 /* FarmerDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA871F8D332C0014B271 /* FarmerDecorator.cpp */; };
+		9AA5DA8C1F8D339D0014B271 /* SoldierDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA8A1F8D339D0014B271 /* SoldierDecorator.cpp */; };
+		9AA5DA8F1F8D33C40014B271 /* ShamanDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5DA8D1F8D33C40014B271 /* ShamanDecorator.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A275BAC1F8CA9170096D91A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A275BAE1F8CA9170096D91A /* HOOP_Assignment04 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HOOP_Assignment04; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A275BB11F8CA9170096D91A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9AA5DA781F8D100E0014B271 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		9AA5DA791F8D100E0014B271 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		9AA5DA7B1F8D2F400014B271 /* NPCBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NPCBase.cpp; sourceTree = "<group>"; };
+		9AA5DA7C1F8D2F400014B271 /* NPCBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NPCBase.hpp; sourceTree = "<group>"; };
+		9AA5DA7E1F8D31620014B271 /* ElfNPC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ElfNPC.cpp; sourceTree = "<group>"; };
+		9AA5DA7F1F8D31620014B271 /* ElfNPC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ElfNPC.hpp; sourceTree = "<group>"; };
+		9AA5DA811F8D321C0014B271 /* OrkNPC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrkNPC.cpp; sourceTree = "<group>"; };
+		9AA5DA821F8D321C0014B271 /* OrkNPC.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrkNPC.hpp; sourceTree = "<group>"; };
+		9AA5DA841F8D32920014B271 /* Decorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Decorator.cpp; sourceTree = "<group>"; };
+		9AA5DA851F8D32920014B271 /* Decorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decorator.hpp; sourceTree = "<group>"; };
+		9AA5DA871F8D332C0014B271 /* FarmerDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FarmerDecorator.cpp; sourceTree = "<group>"; };
+		9AA5DA881F8D332C0014B271 /* FarmerDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FarmerDecorator.hpp; sourceTree = "<group>"; };
+		9AA5DA8A1F8D339D0014B271 /* SoldierDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoldierDecorator.cpp; sourceTree = "<group>"; };
+		9AA5DA8B1F8D339D0014B271 /* SoldierDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SoldierDecorator.hpp; sourceTree = "<group>"; };
+		9AA5DA8D1F8D33C40014B271 /* ShamanDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShamanDecorator.cpp; sourceTree = "<group>"; };
+		9AA5DA8E1F8D33C40014B271 /* ShamanDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShamanDecorator.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A275BAB1F8CA9170096D91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A275BA51F8CA9170096D91A = {
+			isa = PBXGroup;
+			children = (
+				9A275BB01F8CA9170096D91A /* HOOP_Assignment04 */,
+				9A275BAF1F8CA9170096D91A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A275BAF1F8CA9170096D91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A275BAE1F8CA9170096D91A /* HOOP_Assignment04 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A275BB01F8CA9170096D91A /* HOOP_Assignment04 */ = {
+			isa = PBXGroup;
+			children = (
+				9A275BB11F8CA9170096D91A /* main.cpp */,
+				9AA5DA781F8D100E0014B271 /* Queue.cpp */,
+				9AA5DA791F8D100E0014B271 /* Queue.hpp */,
+				9AA5DA7B1F8D2F400014B271 /* NPCBase.cpp */,
+				9AA5DA7C1F8D2F400014B271 /* NPCBase.hpp */,
+				9AA5DA7E1F8D31620014B271 /* ElfNPC.cpp */,
+				9AA5DA7F1F8D31620014B271 /* ElfNPC.hpp */,
+				9AA5DA811F8D321C0014B271 /* OrkNPC.cpp */,
+				9AA5DA821F8D321C0014B271 /* OrkNPC.hpp */,
+				9AA5DA841F8D32920014B271 /* Decorator.cpp */,
+				9AA5DA851F8D32920014B271 /* Decorator.hpp */,
+				9AA5DA871F8D332C0014B271 /* FarmerDecorator.cpp */,
+				9AA5DA881F8D332C0014B271 /* FarmerDecorator.hpp */,
+				9AA5DA8A1F8D339D0014B271 /* SoldierDecorator.cpp */,
+				9AA5DA8B1F8D339D0014B271 /* SoldierDecorator.hpp */,
+				9AA5DA8D1F8D33C40014B271 /* ShamanDecorator.cpp */,
+				9AA5DA8E1F8D33C40014B271 /* ShamanDecorator.hpp */,
+			);
+			path = HOOP_Assignment04;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A275BAD1F8CA9170096D91A /* HOOP_Assignment04 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A275BB51F8CA9170096D91A /* Build configuration list for PBXNativeTarget "HOOP_Assignment04" */;
+			buildPhases = (
+				9A275BAA1F8CA9170096D91A /* Sources */,
+				9A275BAB1F8CA9170096D91A /* Frameworks */,
+				9A275BAC1F8CA9170096D91A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HOOP_Assignment04;
+			productName = HOOP_Assignment04;
+			productReference = 9A275BAE1F8CA9170096D91A /* HOOP_Assignment04 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A275BA61F8CA9170096D91A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ruben Bergshoeff";
+				TargetAttributes = {
+					9A275BAD1F8CA9170096D91A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9A275BA91F8CA9170096D91A /* Build configuration list for PBXProject "HOOP_Assignment04" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A275BA51F8CA9170096D91A;
+			productRefGroup = 9A275BAF1F8CA9170096D91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A275BAD1F8CA9170096D91A /* HOOP_Assignment04 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A275BAA1F8CA9170096D91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA5DA891F8D332C0014B271 /* FarmerDecorator.cpp in Sources */,
+				9AA5DA8F1F8D33C40014B271 /* ShamanDecorator.cpp in Sources */,
+				9AA5DA7D1F8D2F400014B271 /* NPCBase.cpp in Sources */,
+				9AA5DA8C1F8D339D0014B271 /* SoldierDecorator.cpp in Sources */,
+				9AA5DA831F8D321C0014B271 /* OrkNPC.cpp in Sources */,
+				9A275BB21F8CA9170096D91A /* main.cpp in Sources */,
+				9AA5DA7A1F8D100E0014B271 /* Queue.cpp in Sources */,
+				9AA5DA801F8D31620014B271 /* ElfNPC.cpp in Sources */,
+				9AA5DA861F8D32920014B271 /* Decorator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A275BB31F8CA9170096D91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9A275BB41F8CA9170096D91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9A275BB61F8CA9170096D91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A275BB71F8CA9170096D91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A275BA91F8CA9170096D91A /* Build configuration list for PBXProject "HOOP_Assignment04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A275BB31F8CA9170096D91A /* Debug */,
+				9A275BB41F8CA9170096D91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A275BB51F8CA9170096D91A /* Build configuration list for PBXNativeTarget "HOOP_Assignment04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A275BB61F8CA9170096D91A /* Debug */,
+				9A275BB71F8CA9170096D91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A275BA61F8CA9170096D91A /* Project object */;
+}

@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
     t = clock();
     
     // duration of frame in seconds
-    double framerate = 0.1; // fixed 60fps = 0.0166667
+    double framerate = 0.2; // fixed 60fps = 0.0166667
     
     // references to the defined behaviours
     CBStandard * standardBehaviour = new CBStandard();
