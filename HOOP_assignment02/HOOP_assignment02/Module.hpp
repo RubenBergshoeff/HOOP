@@ -1,37 +1,35 @@
 //
 //  Module.hpp
-//  HOOP_assignment02
+//  HOOP_Assignment02
 //
-//  Created by Ruben Bergshoeff on 9/26/17.
+//  Created by Ruben Bergshoeff on 10/28/17.
 //  Copyright © 2017 Ruben Bergshoeff. All rights reserved.
 //
 
 #ifndef Module_hpp
 #define Module_hpp
 
-#include "Student.hpp"
-#include "Docent.hpp"
-
+#include <iostream>
 #include <stdio.h>
 #include <vector>
 #include <string>
-using namespace std;
-
-class Student;
+#include "Student.hpp"
+#include "Docent.hpp"
 
 class Module {
 public:
-    Module(string name);
-    Module(string name, int EC);
-    void AssignDocent(Docent* docent);
-    void AssignStudent(Student* student);
-    bool ContainsStudent (Student* student);
-    int GetECs ();
-    void DisplayModule();
+    Module (std::string naam, Docent &docent, std::vector<Student *> &students, int EC);
+    void DisplayModule ();
+    void ChangeDocent (Docent &docent);
+    void ChangeEC (int EC);
+    void AddStudent (Student &student);
+    void RemoveStudent (Student &student);
+    bool ContainsStudent (Student &student);
+    int GetEC ();
 private:
+    std::string naam;
     Docent docent;
-    vector<Student> studenten;
-    string naam;
+    std::vector<Student *> students;
     int EC;
 };
 

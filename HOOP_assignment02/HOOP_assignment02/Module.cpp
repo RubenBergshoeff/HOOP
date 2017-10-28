@@ -1,44 +1,62 @@
 //
 //  Module.cpp
-//  HOOP_assignment02
+//  HOOP_Assignment02
 //
-//  Created by Ruben Bergshoeff on 9/26/17.
+//  Created by Ruben Bergshoeff on 10/28/17.
 //  Copyright © 2017 Ruben Bergshoeff. All rights reserved.
 //
 
 #include "Module.hpp"
 
-Module::Module(string name){
-    this->naam = name;
-}
-
-Module::Module(string name, int EC){
-    this->naam = name;
+Module::Module (std::string naam, Docent &docent, std::vector<Student *> &students, int EC) : docent("standard"){
+    this->naam = naam;
+    this->docent = docent;
+    this->students = students;
     this->EC = EC;
 }
 
-void Module::AssignDocent(Docent *docent){
-    this->docent = *docent;
+void Module::DisplayModule (){
+    std::cout << "\n------------------------------------" << std::endl;
+    std::cout << naam << std::endl;
+    std::cout << "------------------------------------" << std::endl;
+    std::cout << "Docent: " << docent.GetName() << std::endl;
+    std::cout << "------------------------------------" << std::endl;
+    std::cout << "Studenten:" << std::endl;
+    for (int i = 0; i < students.size() ; i++) {
+        std::cout << students[i]->GetName() << std::endl;
+    }
 }
 
-void Module::AssignStudent(Student *student){
-    this->studenten.push_back(*student);
+void Module::ChangeDocent (Docent &docent){
+    this->docent = docent;
 }
 
-bool Module::ContainsStudent (Student* student){
-    vector<Student>::iterator it = studenten.begin();
-    while (it != studenten.end()){
-        if (it->GetName() == student->GetName()){
+void Module::ChangeEC (int newEC){
+    EC = newEC;
+}
+
+void Module::AddStudent (Student &student){
+    students.push_back(&student);
+}
+
+void Module::RemoveStudent (Student &student){
+    for (int i = 0; i < students.size() ; i++) {
+        if (students[i] == &student) {
+            students.erase(students.begin() + i);
+            return;
+        }
+    }
+}
+
+bool Module::ContainsStudent (Student &student){
+    for (int i = 0; i < students.size() ; i++) {
+        if (students[i] == &student) {
             return true;
         }
     }
     return false;
 }
 
-int Module::GetECs(){
-    return this->EC;
-}
-
-void Module::DisplayModule(){
-    
+int Module::GetEC (){
+    return EC;
 }

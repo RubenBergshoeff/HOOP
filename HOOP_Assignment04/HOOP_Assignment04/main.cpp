@@ -80,6 +80,9 @@ void testNPCs (){
     NPCBase * soldierElf = new SoldierDecorator(new ElfNPC("Legolas"));
     npcs.push_back(soldierElf);
     
+    npcs.pop_back();
+    
+    
     render(npcs);
 }
 

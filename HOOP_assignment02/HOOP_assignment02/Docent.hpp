@@ -1,8 +1,8 @@
 //
 //  Docent.hpp
-//  HOOP_assignment02
+//  HOOP_Assignment02
 //
-//  Created by Ruben Bergshoeff on 9/26/17.
+//  Created by Ruben Bergshoeff on 10/28/17.
 //  Copyright © 2017 Ruben Bergshoeff. All rights reserved.
 //
 
@@ -11,13 +11,13 @@
 
 #include <stdio.h>
 #include <string>
-using namespace std;
 
 class Docent {
 public:
-    string GetName ();
+    Docent (std::string naam);
+    std::string GetName ();
 private:
-    string naam;
+    std::string naam;
 };
 
 #endif /* Docent_hpp */
